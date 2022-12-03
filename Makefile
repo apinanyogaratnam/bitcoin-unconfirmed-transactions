@@ -1,4 +1,4 @@
-IMAGE_NAME = base-python-service-template
+IMAGE_NAME = bitcoin-unconfirmed-transactions
 
 .PHONY: build
 
@@ -23,7 +23,7 @@ run:
 	docker run -p 8001:8001 ${IMAGE_NAME}
 
 up:
-	docker-compose up --scale base-python-service-template=5 --remove-orphans -d --build
+	docker-compose up --scale ${IMAGE_NAME}=5 --remove-orphans -d --build
 
 down:
 	docker-compose down

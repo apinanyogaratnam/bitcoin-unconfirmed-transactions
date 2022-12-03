@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 
-from api.controllers import HealthCheck, Home
+from api.controllers import HealthCheck, Home, UnconfirmedTransactions
 
 
 def create_app():
@@ -14,5 +14,6 @@ def create_app():
     # Register Resources
     api.add_resource(HealthCheck, "/healthcheck")
     api.add_resource(Home, "/")
+    api.add_resource(UnconfirmedTransactions, "/unconfirmed-transactions")
 
     return app

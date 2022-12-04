@@ -1,6 +1,6 @@
 # Bitcoin Unconfirmed Transactions
 
-A template of README best practices to make your README simple to understand and easy to use.
+A server to get all unconfirmed bitcoin transactions
 
 ## Table of Contents
 
@@ -11,25 +11,26 @@ A template of README best practices to make your README simple to understand and
 
 ## Installation
 
-Install the package using pip:
+Install the project locally:
 
 ```sh
-pip install base
+git clone git@github.com:apinanyogaratnam/bitcoin-unconfirmed-transactions
+pip install pipenv
+pipenv shell
+pipenv install
+pipenv install --dev
 ```
 
 ## Usage
 
-```python
-from base_python_package_template import greetings
-
-greeting = greetings()
-print(greeting)
+```sh
+make start
 ```
 
 ## Support
 
-Please [open an issue](https://github.com/apinanyogaratnam/base-python-package-template/issues/new) for support.
+Please [open an issue](https://github.com/apinanyogaratnam/base-python-service-template/issues/new) for support.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/base-python-package-template/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/base-python-service-template/compare/).
